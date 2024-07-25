@@ -1,0 +1,380 @@
+/*** Import Section ***/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+/*** Variabel Declaration ***/
+:root {
+  --text-small: 16px;
+  --text-medium: 18px;
+  --text-large: 21px;
+  --text-xl: 24px;
+  --text-xxl: 40px;
+  --spasing-small: 8px;
+  --spasing-medium: 16px;
+  --btn-rounded-30: 30px;
+  --btn-rounded-50: 50px;
+}
+
+.text-xsmall {
+  font-size: calc(var(--text-small) - 1px);
+}
+
+
+.text-small {
+  font-size: var(--text-small);
+}
+
+.text-medium {
+  font-size: var(--text-medium);
+}
+
+.text-large {
+  font-size: var(--text-large);
+}
+
+.text-xl {
+  font-size: var(--text-xl);
+} 
+
+.text-xl-c {
+  font-size: calc(var(--text-xl) + 8px);
+} 
+
+.text-xxl {
+  font-size: var(--text-xxl);
+}
+
+.spasing-small {
+  padding: var(--spasing-small) 0;
+}
+
+.spasing-medium {
+  padding: var(--spasing-medium) 0;
+}
+
+.main-page{
+  margin: 3rem 7rem;
+}
+
+.feeds-widget-page{
+  display: grid;
+  gap: 8%;
+  grid-template-columns: 60% 32%;
+}
+
+.login-page{
+  width: 45%;
+  margin: 3rem 7rem;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    padding-right: calc(var(--bs-gutter-x)* 5) !important;
+    padding-left: calc(var(--bs-gutter-x)* 5) !important;
+  }
+
+[data-bs-theme=dark] .bg-body-tertiary {
+    --bs-bg-opacity: .1 !important;  
+}
+
+[data-bs-theme=light] .bg-body-tertiary {
+  --bs-bg-opacity: 1 !important; 
+  background-color: rgb(235 235 235);
+}
+
+.rounded-30 {
+  border-radius: var(--btn-rounded-30);
+}
+
+.rounded-50 {
+  border-radius: var(--btn-rounded-50) !important;
+}
+
+.title-section .dropdown-toggle::after {
+  display: none !important;
+}
+
+.me-auto {
+  margin-left: auto !important;
+}
+
+.quick-action {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: auto auto auto;
+}
+
+.q-card{
+  border-radius: 20px;
+  background-color: #1B1B1B;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.aside{
+  flex-direction: row;
+  display: flex;
+}
+
+.title-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+[data-bs-theme=dark] {
+  body{
+    background: linear-gradient(90deg, rgba(16,14,14,1) 0%, rgba(23,23,23,1) 91%) !important;
+    /*** Variabel Declaration ***/
+    --bg-color-dark-1: #100E0E;
+    --bg-col0r-dark-2: #171717;
+    --text-color-dark-1: #fff;
+    --text-color-dark-2: #f5f5f5;
+    --text-color-dark-3: #e5e5e5;
+  }
+}
+/*** CSS Section ***/
+[data-bs-theme=light] {
+  body{
+      /*** Variabel Declaration ***/
+      /*** Light  Mode ***/
+      background: linear-gradient(90deg, rgba(235, 235, 235,1) 0%, rgba(191, 186, 186,1) 91%) !important;
+
+      --bg-color: rgb(235, 235, 235);
+      --bg-color-2: rgb(191, 186, 186);
+      --text-color: #000;
+
+      /*** Dark Mode ***/
+      --bg-color-dark-1: #100E0E;
+      --bg-col0r-dark-2: #171717;
+      --text-color-dark-1: #fff;
+      --text-color-dark-2: #f5f5f5;
+      --text-color-dark-3: #e5e5e5;
+  }
+}
+
+/*** Font Indentify ***/
+
+.ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .ubuntu-light-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .ubuntu-regular-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .ubuntu-medium-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .ubuntu-bold-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .quicksand-light {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .quicksand-regular {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .quicksand-medium {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .quicksand-bold {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+/*** CSS Dashboard Section ***/
+
+
+.title-page{
+  padding: 3rem 5rem;
+  background-color: #2a2a2a;
+  border-radius: 0 0 5rem 5rem;
+}
+
+.dashboard-overview {
+  display: grid;
+  gap: 3%;
+  grid-template-columns: 39% 27% 27%;
+  background-color: #1B1B1B;
+  border-radius: 40px;
+  padding: 2rem;
+  margin: 0rem 4.5rem;
+  transform: translateY(-2.3rem);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  grid-template-rows: max-content;
+  height: auto;
+}
+
+.data-overview {
+  display: grid;
+  gap: 3%;
+  grid-template-columns: 100%;
+  background-color: #1B1B1B;
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 0rem 4.5rem;
+  transform: translateY(-2.3rem);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  grid-template-rows: max-content;
+  height: auto;
+}
+
+.card-widget{
+  border-radius: 20px;
+  background-color: #343434;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 0.9rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+}
+
+.annoucements-widget{
+  border-radius: 20px;
+  background-color: #343434;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 0.9rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: max-content;
+
+}
+
+.card-widget-date{
+  border-radius: 20px;
+  background-color: #343434;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+
+}
+
+.s-card-widget{
+  border-radius: 20px;
+  background-color: #343434;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 1rem;;
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: max-content max-content;
+}
+
+.widget{
+  display: grid;
+  gap: 1rem;
+}
+
+.sec-1{
+  display: grid;
+  gap: 2rem;
+  grid-template-rows: max-content max-content;
+}
+
+.sec-2{
+  display: grid;
+  grid-template-rows: max-content;
+}
+
+.sec-3{
+  display: grid;
+  grid-template-rows: max-content;
+}
+
+.half{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 50% 45%;} 
+
+.half-down{
+  display: grid;
+  gap: rem;
+  grid-template-rows: max-content max-content;} 
+/* Sidebar */
+
+
+
+.icon-count{
+  background-color: #1B1B1B;
+  padding: 0.8rem 0.6rem;
+  border-radius: 10px;
+}
+
+.half-side{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 48% 48%;
+}
+
+.text-container-widget{
+  background-color: #1B1B1B;
+  padding: 1rem;
+  border-radius: 20px;
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: max-content max-content;
+  position: relative;
+
+}
+
+.action{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 2rem;
+}
+
+.action-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;  
+}
+
+.action-btn button{
+  margin: .3rem .7rem;
+} 
